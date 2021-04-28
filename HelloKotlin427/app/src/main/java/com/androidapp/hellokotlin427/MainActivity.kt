@@ -13,16 +13,22 @@ class MainActivity : AppCompatActivity() {
 
         val btnJava = findViewById<Button>(R.id.btnJava)
         val btnKotlin = findViewById<Button>(R.id.btnKotlin)
+        val btnVarJava = findViewById<Button>(R.id.btnVarJava)
+        val btnVarKotlin = findViewById<Button>(R.id.btnVarKotlin)
 
         var intent: Intent
 
         btnJava.setOnClickListener {
-            intent = Intent(this@MainActivity, BmiJavaActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@MainActivity, BmiJavaActivity::class.java))
         }
         btnKotlin.setOnClickListener {
-            intent = Intent(this@MainActivity, BmiKotlinActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@MainActivity, BmiKotlinActivity::class.java))
+        }
+        btnVarJava.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VariableJavaActivity::class.java))
+        }
+        btnVarKotlin.setOnClickListener {
+            startActivity(Intent(this@MainActivity, VariableKotlinActivity::class.java))
         }
 
     }
