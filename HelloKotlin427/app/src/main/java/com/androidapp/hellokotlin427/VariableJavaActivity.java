@@ -13,7 +13,7 @@ import java.util.Locale;
 public class VariableJavaActivity extends AppCompatActivity {
     int clickCount = 0;
     final long startTime = System.currentTimeMillis();
-    long elapsedSeconds;
+    long elapsedSeconds =(long)((System.currentTimeMillis() - startTime) / 1000.0);
 
     TextView txtActivityStartTime, txtCountBtnClicks, txtElapsedTime;
     Button btnClickMe;
