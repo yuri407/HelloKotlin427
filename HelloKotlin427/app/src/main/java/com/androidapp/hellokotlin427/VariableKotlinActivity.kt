@@ -11,7 +11,7 @@ class VariableKotlinActivity : AppCompatActivity() {
 
     var clickCount = 0
     var startTime = System.currentTimeMillis()
-    var elapsedSeconds : Long = ((System.currentTimeMillis() - startTime)/ 1000.0).toLong()
+    var elapsedSeconds : Long = ((System.currentTimeMillis() - startTime) / 1000.0).toLong()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
