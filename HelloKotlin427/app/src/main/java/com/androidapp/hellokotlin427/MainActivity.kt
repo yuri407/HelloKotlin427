@@ -24,6 +24,5 @@ class MainActivity : AppCompatActivity() {
             intent = Intent(this@MainActivity, BmiKotlinActivity::class.java)
             startActivity(intent)
         }
-
     }
 }

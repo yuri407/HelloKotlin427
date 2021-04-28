@@ -29,7 +29,6 @@ public class BmiJavaActivity extends AppCompatActivity {
 
            public void onClick(View view) {
                String sHeight, sWeight;
-
               /* String sHeight = heightField.getText().toString();
                String sWeight = weightField.getText().toString();
                if (!weightField.getText().toString().isEmpty() && !heightField.getText().toString().isEmpty()) {
